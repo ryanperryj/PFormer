@@ -7,18 +7,18 @@
 polygon = PoolVector2Array( -8, 0, -8, -2, -7, -2, -7, -3, 7, -3, 7, -2, 8, -2, 8, 0, 7, 0, 7, -1, -7, -1, -7, 0 )
 
 [node name="Light1" type="Node2D"]
+z_index = 2
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 offset = Vector2( 0, -3 )
 
 [node name="Light2D" type="Light2D" parent="."]
-position = Vector2( 0, -1 )
+position = Vector2( 0, -0.4 )
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 1 )
 energy = 0.9
 shadow_enabled = true
-shadow_filter = 2
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
 occluder = SubResource( 1 )
